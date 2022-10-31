@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/a.css">
+    <title>LUX - Relatorio</title>
+</head>
+<body>
+      <h1>Relatorio da pesquisa eleitoral </h1>
+
+      
+   
+        <thead>
+            <center>
+        <table>
+            <tr>
+                <td>Nome do Candidato</td>
+                <td>Número de votos </td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dado in relatorio   %}
+            <tr>
+                <td>{{dado[0]}}</td>
+                <td>{{dado[1]}}</td>
+            </tr>
+
+            {% endfor  %}
+        </tbody>
+        
+        </table>
+        <a href="/"> <h4>Voltar para tela inicial</h4></a>
+    </center>
+</body>
+</html>
